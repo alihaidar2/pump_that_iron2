@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:pump_that_iron/services/object_box.dart';
 import 'package:pump_that_iron/pages/database_example_page.dart';
 import 'package:pump_that_iron/pages/exercise_list_page.dart';

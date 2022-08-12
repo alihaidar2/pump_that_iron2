@@ -72,7 +72,7 @@ configurations {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    def objectboxVersion = "3.2.1"
-    debugImplementation("io.objectbox:objectbox-android-objectbrowser:$objectboxVersion")
-    releaseImplementation("io.objectbox:objectbox-android:$objectboxVersion")
+//    def objectboxVersion = "3.2.1"
+//    debugImplementation("io.objectbox:objectbox-android-objectbrowser:$objectboxVersion")
+//    releaseImplementation("io.objectbox:objectbox-android:$objectboxVersion")
 }
