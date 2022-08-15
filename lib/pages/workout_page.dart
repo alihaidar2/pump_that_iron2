@@ -2,16 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pump_that_iron/main.dart';
 import 'package:pump_that_iron/models/exercise.dart';
+import 'package:pump_that_iron/globals.dart' as globals;
 
-class DatabaseExamplePage extends StatefulWidget {
-  const DatabaseExamplePage({Key? key, required this.title}) : super(key: key);
+class WorkoutPage extends StatefulWidget {
+  const WorkoutPage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
-  State<DatabaseExamplePage> createState() => _DatabaseExamplePageState();
+  State<WorkoutPage> createState() => _WorkoutPageState();
 }
 
-class _DatabaseExamplePageState extends State<DatabaseExamplePage> {
+class _WorkoutPageState extends State<WorkoutPage> {
   late Stream<List<Exercise>> streamExercises;
 
   @override
