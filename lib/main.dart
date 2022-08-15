@@ -1,6 +1,6 @@
  import 'package:flutter/material.dart';
 import 'package:pump_that_iron/services/object_box.dart';
-import 'package:pump_that_iron/pages/database_example_page.dart';
+import 'package:pump_that_iron/pages/workout_page.dart';
 import 'package:pump_that_iron/pages/exercise_list_page.dart';
 
 import 'package:pump_that_iron/services/api_service.dart';
@@ -59,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             TextButton(
               // dont need the message, but it is used if you want to return something from that page
+              child: const Text("Next"),
               onPressed: () async {
                 var message = await Navigator.push(context,
                     MaterialPageRoute(builder: (context) {
@@ -66,12 +67,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 }));
                 print(message);
               },
-              child: const Text("Next"),
             ),
             TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return const DatabaseExamplePage(title: 'Database Example Page');
+                    return const WorkoutPage(title: 'Workout Page');
                   }));
                 },
                 child: const Text("To Database Page"))
