@@ -56,6 +56,7 @@ class _DatabaseExamplePageState extends State<DatabaseExamplePage> {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
+          // generate list of exercises
           final exercise = Exercise(name: "Name", target: "target", bodyPart: "bodyPart", equipment: "equipment", gifUrl: "gifUrl");
           objectBox.insertExercise(exercise);
         },
