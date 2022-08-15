@@ -79,13 +79,22 @@ Future<Store> openStore(
 ModelDefinition getObjectBoxModel() {
   final model = ModelInfo(
       entities: _entities,
-      lastEntityId: const IdUid(1, 3681725392697779731),
+      lastEntityId: const IdUid(4, 3248275344649977591),
       lastIndexId: const IdUid(0, 0),
       lastRelationId: const IdUid(0, 0),
       lastSequenceId: const IdUid(0, 0),
-      retiredEntityUids: const [],
+      retiredEntityUids: const [
+        2690128395146467086,
+        8710906015806695301,
+        3248275344649977591
+      ],
       retiredIndexUids: const [],
-      retiredPropertyUids: const [],
+      retiredPropertyUids: const [
+        5483389686525093381,
+        9037548890521716223,
+        605189217942144292,
+        1075626452815573125
+      ],
       retiredRelationUids: const [],
       modelVersion: 5,
       modelVersionParserMinimum: 5,
