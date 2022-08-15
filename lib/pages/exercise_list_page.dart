@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pump_that_iron/models/exercise.dart';
 import 'package:pump_that_iron/services/api_service.dart';
 import 'package:pump_that_iron/widgets/ExerciseRow.dart';
+import 'package:pump_that_iron/globals.dart' as globals;
 
 class ExerciseListPage extends StatefulWidget {
   const ExerciseListPage({Key? key, required this.title}) : super(key: key);
@@ -71,6 +72,9 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
               future: futureExercises,
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
+                  if (snapshot.data!.length > 1000) {
+                    globals.exerciseList = snapshot.data!;
+                  }
                   return ListView.builder(
                       physics: const ScrollPhysics(),
                       shrinkWrap: true,

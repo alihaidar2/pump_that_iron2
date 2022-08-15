@@ -45,7 +45,7 @@ class _WorkoutPageState extends State<WorkoutPage> {
                   title: Text(exercise.name!),
                   subtitle: Text(exercise.target!),
                   trailing: IconButton(
-                    icon: Icon(Icons.delete),
+                    icon: const Icon(Icons.delete),
                     onPressed: () => objectBox.deleteExercise(exercise.id!),
                   ),
                 );
